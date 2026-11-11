@@ -88,12 +88,6 @@
             </div>
         </form>
 
-        <div style="background-color: var(--color-bg); padding: 16px; border-radius: var(--radius-btn); margin-bottom: 20px; font-size: 13px;">
-            <div style="font-weight: 600; margin-bottom: 6px;">Cuentas de prueba:</div>
-            <div><strong>Admin:</strong> admin@levelup.com (Clave: admin123)</div>
-            <div><strong>Cajero:</strong> vendedor@levelup.com (Clave: vendedor123)</div>
-        </div>
-
         <div style="text-align: center; font-size: 13px;">
             <span style="color: var(--color-text-muted);">¿Solo deseas explorar los juegos disponibles?</span><br>
             <a href="index.php?accion=menu" style="font-weight: 600;">Ver Catálogo Público Digital &rarr;</a>
