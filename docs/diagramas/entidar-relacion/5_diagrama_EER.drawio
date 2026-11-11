@@ -1,0 +1,175 @@
+<mxfile host="app.diagrams.net">
+  <diagram id="eer" name="EER Level Up Games">
+    <mxGraphModel grid="1" page="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" pageScale="1" pageWidth="1700" pageHeight="1000" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="rol" parent="1" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=14;" value="rol" vertex="1">
+          <mxGeometry height="82" width="340" x="40" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="rol_0" parent="rol" style="text;strokeColor=none;fillColor=#ffffff;align=left;verticalAlign=middle;overflow=hidden;html=1;fontSize=11;" value="&lt;table cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; width=&quot;100%&quot;&gt;&lt;tr&gt;&lt;td width=&quot;62&quot; style=&quot;color:#b85450;&quot;&gt;&amp;nbsp;&lt;b&gt;PK&lt;/b&gt;&lt;/td&gt;&lt;td width=&quot;110&quot;&gt;&lt;b&gt;id_rol&lt;/b&gt;&lt;/td&gt;&lt;td width=&quot;100&quot; style=&quot;color:#666666;&quot;&gt;TINYINT&lt;/td&gt;&lt;td style=&quot;color:#999999;font-size:10px;&quot;&gt;AI&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" vertex="1">
+          <mxGeometry height="26" width="340" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="rol_1" parent="rol" style="text;strokeColor=none;fillColor=#ffffff;align=left;verticalAlign=middle;overflow=hidden;html=1;fontSize=11;" value="&lt;table cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; width=&quot;100%&quot;&gt;&lt;tr&gt;&lt;td width=&quot;62&quot; style=&quot;color:#b85450;&quot;&gt;&amp;nbsp;&lt;/td&gt;&lt;td width=&quot;110&quot;&gt;&lt;b&gt;nombre&lt;/b&gt;&lt;/td&gt;&lt;td width=&quot;100&quot; style=&quot;color:#666666;&quot;&gt;VARCHAR(30)&lt;/td&gt;&lt;td style=&quot;color:#999999;font-size:10px;&quot;&gt;NN, UQ&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" vertex="1">
+          <mxGeometry height="26" width="340" y="56" as="geometry" />
+        </mxCell>
+        <mxCell id="usuario" parent="1" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=14;" value="usuario" vertex="1">
+          <mxGeometry height="212" width="340" x="440" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="usuario_0" parent="usuario" style="text;strokeColor=none;fillColor=#ffffff;align=left;verticalAlign=middle;overflow=hidden;html=1;fontSize=11;" value="&lt;table cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; width=&quot;100%&quot;&gt;&lt;tr&gt;&lt;td width=&quot;62&quot; style=&quot;color:#b85450;&quot;&gt;&amp;nbsp;&lt;b&gt;PK&lt;/b&gt;&lt;/td&gt;&lt;td width=&quot;110&quot;&gt;&lt;b&gt;id_usuario&lt;/b&gt;&lt;/td&gt;&lt;td width=&quot;100&quot; style=&quot;color:#666666;&quot;&gt;INT&lt;/td&gt;&lt;td style=&quot;color:#999999;font-size:10px;&quot;&gt;AI&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" vertex="1">
+          <mxGeometry height="26" width="340" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="usuario_1" parent="usuario" style="text;strokeColor=none;fillColor=#ffffff;align=left;verticalAlign=middle;overflow=hidden;html=1;fontSize=11;" value="&lt;table cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; width=&quot;100%&quot;&gt;&lt;tr&gt;&lt;td width=&quot;62&quot; style=&quot;color:#b85450;&quot;&gt;&amp;nbsp;&lt;b&gt;FK&lt;/b&gt;&lt;/td&gt;&lt;td width=&quot;110&quot;&gt;&lt;b&gt;id_rol&lt;/b&gt;&lt;/td&gt;&lt;td width=&quot;100&quot; style=&quot;color:#666666;&quot;&gt;TINYINT&lt;/td&gt;&lt;td style=&quot;color:#999999;font-size:10px;&quot;&gt;NN&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" vertex="1">
+          <mxGeometry height="26" width="340" y="56" as="geometry" />
+        </mxCell>
+        <mxCell id="usuario_2" parent="usuario" style="text;strokeColor=none;fillColor=#ffffff;align=left;verticalAlign=middle;overflow=hidden;html=1;fontSize=11;" value="&lt;table cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; width=&quot;100%&quot;&gt;&lt;tr&gt;&lt;td width=&quot;62&quot; style=&quot;color:#b85450;&quot;&gt;&amp;nbsp;&lt;/td&gt;&lt;td width=&quot;110&quot;&gt;&lt;b&gt;nombre&lt;/b&gt;&lt;/td&gt;&lt;td width=&quot;100&quot; style=&quot;color:#666666;&quot;&gt;VARCHAR(80)&lt;/td&gt;&lt;td style=&quot;color:#999999;font-size:10px;&quot;&gt;NN&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" vertex="1">
+          <mxGeometry height="26" width="340" y="82" as="geometry" />
+        </mxCell>
+        <mxCell id="usuario_3" parent="usuario" style="text;strokeColor=none;fillColor=#ffffff;align=left;verticalAlign=middle;overflow=hidden;html=1;fontSize=11;" value="&lt;table cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; width=&quot;100%&quot;&gt;&lt;tr&gt;&lt;td width=&quot;62&quot; style=&quot;color:#b85450;&quot;&gt;&amp;nbsp;&lt;/td&gt;&lt;td width=&quot;110&quot;&gt;&lt;b&gt;correo&lt;/b&gt;&lt;/td&gt;&lt;td width=&quot;100&quot; style=&quot;color:#666666;&quot;&gt;VARCHAR(100)&lt;/td&gt;&lt;td style=&quot;color:#999999;font-size:10px;&quot;&gt;NN, UQ&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" vertex="1">
+          <mxGeometry height="26" width="340" y="108" as="geometry" />
+        </mxCell>
+        <mxCell id="usuario_4" parent="usuario" style="text;strokeColor=none;fillColor=#ffffff;align=left;verticalAlign=middle;overflow=hidden;html=1;fontSize=11;" value="&lt;table cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; width=&quot;100%&quot;&gt;&lt;tr&gt;&lt;td width=&quot;62&quot; style=&quot;color:#b85450;&quot;&gt;&amp;nbsp;&lt;/td&gt;&lt;td width=&quot;110&quot;&gt;&lt;b&gt;contrasena&lt;/b&gt;&lt;/td&gt;&lt;td width=&quot;100&quot; style=&quot;color:#666666;&quot;&gt;VARCHAR(255)&lt;/td&gt;&lt;td style=&quot;color:#999999;font-size:10px;&quot;&gt;NN&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" vertex="1">
+          <mxGeometry height="26" width="340" y="134" as="geometry" />
+        </mxCell>
+        <mxCell id="usuario_5" parent="usuario" style="text;strokeColor=none;fillColor=#ffffff;align=left;verticalAlign=middle;overflow=hidden;html=1;fontSize=11;" value="&lt;table cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; width=&quot;100%&quot;&gt;&lt;tr&gt;&lt;td width=&quot;62&quot; style=&quot;color:#b85450;&quot;&gt;&amp;nbsp;&lt;/td&gt;&lt;td width=&quot;110&quot;&gt;&lt;b&gt;activo&lt;/b&gt;&lt;/td&gt;&lt;td width=&quot;100&quot; style=&quot;color:#666666;&quot;&gt;TINYINT(1)&lt;/td&gt;&lt;td style=&quot;color:#999999;font-size:10px;&quot;&gt;NN&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" vertex="1">
+          <mxGeometry height="26" width="340" y="160" as="geometry" />
+        </mxCell>
+        <mxCell id="usuario_6" parent="usuario" style="text;strokeColor=none;fillColor=#ffffff;align=left;verticalAlign=middle;overflow=hidden;html=1;fontSize=11;" value="&lt;table cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; width=&quot;100%&quot;&gt;&lt;tr&gt;&lt;td width=&quot;62&quot; style=&quot;color:#b85450;&quot;&gt;&amp;nbsp;&lt;/td&gt;&lt;td width=&quot;110&quot;&gt;&lt;b&gt;fecha_creacion&lt;/b&gt;&lt;/td&gt;&lt;td width=&quot;100&quot; style=&quot;color:#666666;&quot;&gt;DATETIME&lt;/td&gt;&lt;td style=&quot;color:#999999;font-size:10px;&quot;&gt;NN&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" vertex="1">
+          <mxGeometry height="26" width="340" y="186" as="geometry" />
+        </mxCell>
+        <mxCell id="cliente" parent="1" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=14;" value="cliente" vertex="1">
+          <mxGeometry height="160" width="340" x="40" y="330" as="geometry" />
+        </mxCell>
+        <mxCell id="cliente_0" parent="cliente" style="text;strokeColor=none;fillColor=#ffffff;align=left;verticalAlign=middle;overflow=hidden;html=1;fontSize=11;" value="&lt;table cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; width=&quot;100%&quot;&gt;&lt;tr&gt;&lt;td width=&quot;62&quot; style=&quot;color:#b85450;&quot;&gt;&amp;nbsp;&lt;b&gt;PK&lt;/b&gt;&lt;/td&gt;&lt;td width=&quot;110&quot;&gt;&lt;b&gt;id_cliente&lt;/b&gt;&lt;/td&gt;&lt;td width=&quot;100&quot; style=&quot;color:#666666;&quot;&gt;INT&lt;/td&gt;&lt;td style=&quot;color:#999999;font-size:10px;&quot;&gt;AI&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" vertex="1">
+          <mxGeometry height="26" width="340" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="cliente_1" parent="cliente" style="text;strokeColor=none;fillColor=#ffffff;align=left;verticalAlign=middle;overflow=hidden;html=1;fontSize=11;" value="&lt;table cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; width=&quot;100%&quot;&gt;&lt;tr&gt;&lt;td width=&quot;62&quot; style=&quot;color:#b85450;&quot;&gt;&amp;nbsp;&lt;/td&gt;&lt;td width=&quot;110&quot;&gt;&lt;b&gt;nombre&lt;/b&gt;&lt;/td&gt;&lt;td width=&quot;100&quot; style=&quot;color:#666666;&quot;&gt;VARCHAR(80)&lt;/td&gt;&lt;td style=&quot;color:#999999;font-size:10px;&quot;&gt;NN&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" vertex="1">
+          <mxGeometry height="26" width="340" y="56" as="geometry" />
+        </mxCell>
+        <mxCell id="cliente_2" parent="cliente" style="text;strokeColor=none;fillColor=#ffffff;align=left;verticalAlign=middle;overflow=hidden;html=1;fontSize=11;" value="&lt;table cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; width=&quot;100%&quot;&gt;&lt;tr&gt;&lt;td width=&quot;62&quot; style=&quot;color:#b85450;&quot;&gt;&amp;nbsp;&lt;/td&gt;&lt;td width=&quot;110&quot;&gt;&lt;b&gt;telefono&lt;/b&gt;&lt;/td&gt;&lt;td width=&quot;100&quot; style=&quot;color:#666666;&quot;&gt;VARCHAR(20)&lt;/td&gt;&lt;td style=&quot;color:#999999;font-size:10px;&quot;&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" vertex="1">
+          <mxGeometry height="26" width="340" y="82" as="geometry" />
+        </mxCell>
+        <mxCell id="cliente_3" parent="cliente" style="text;strokeColor=none;fillColor=#ffffff;align=left;verticalAlign=middle;overflow=hidden;html=1;fontSize=11;" value="&lt;table cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; width=&quot;100%&quot;&gt;&lt;tr&gt;&lt;td width=&quot;62&quot; style=&quot;color:#b85450;&quot;&gt;&amp;nbsp;&lt;/td&gt;&lt;td width=&quot;110&quot;&gt;&lt;b&gt;correo&lt;/b&gt;&lt;/td&gt;&lt;td width=&quot;100&quot; style=&quot;color:#666666;&quot;&gt;VARCHAR(100)&lt;/td&gt;&lt;td style=&quot;color:#999999;font-size:10px;&quot;&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" vertex="1">
+          <mxGeometry height="26" width="340" y="108" as="geometry" />
+        </mxCell>
+        <mxCell id="cliente_4" parent="cliente" style="text;strokeColor=none;fillColor=#ffffff;align=left;verticalAlign=middle;overflow=hidden;html=1;fontSize=11;" value="&lt;table cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; width=&quot;100%&quot;&gt;&lt;tr&gt;&lt;td width=&quot;62&quot; style=&quot;color:#b85450;&quot;&gt;&amp;nbsp;&lt;/td&gt;&lt;td width=&quot;110&quot;&gt;&lt;b&gt;fecha_registro&lt;/b&gt;&lt;/td&gt;&lt;td width=&quot;100&quot; style=&quot;color:#666666;&quot;&gt;DATETIME&lt;/td&gt;&lt;td style=&quot;color:#999999;font-size:10px;&quot;&gt;NN&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" vertex="1">
+          <mxGeometry height="26" width="340" y="134" as="geometry" />
+        </mxCell>
+        <mxCell id="pedido" parent="1" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=14;" value="pedido" vertex="1">
+          <mxGeometry height="186" width="340" x="440" y="330" as="geometry" />
+        </mxCell>
+        <mxCell id="pedido_0" parent="pedido" style="text;strokeColor=none;fillColor=#ffffff;align=left;verticalAlign=middle;overflow=hidden;html=1;fontSize=11;" value="&lt;table cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; width=&quot;100%&quot;&gt;&lt;tr&gt;&lt;td width=&quot;62&quot; style=&quot;color:#b85450;&quot;&gt;&amp;nbsp;&lt;b&gt;PK&lt;/b&gt;&lt;/td&gt;&lt;td width=&quot;110&quot;&gt;&lt;b&gt;id_pedido&lt;/b&gt;&lt;/td&gt;&lt;td width=&quot;100&quot; style=&quot;color:#666666;&quot;&gt;INT&lt;/td&gt;&lt;td style=&quot;color:#999999;font-size:10px;&quot;&gt;AI&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" vertex="1">
+          <mxGeometry height="26" width="340" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="pedido_1" parent="pedido" style="text;strokeColor=none;fillColor=#ffffff;align=left;verticalAlign=middle;overflow=hidden;html=1;fontSize=11;" value="&lt;table cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; width=&quot;100%&quot;&gt;&lt;tr&gt;&lt;td width=&quot;62&quot; style=&quot;color:#b85450;&quot;&gt;&amp;nbsp;&lt;b&gt;FK&lt;/b&gt;&lt;/td&gt;&lt;td width=&quot;110&quot;&gt;&lt;b&gt;id_cliente&lt;/b&gt;&lt;/td&gt;&lt;td width=&quot;100&quot; style=&quot;color:#666666;&quot;&gt;INT&lt;/td&gt;&lt;td style=&quot;color:#999999;font-size:10px;&quot;&gt;NN&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" vertex="1">
+          <mxGeometry height="26" width="340" y="56" as="geometry" />
+        </mxCell>
+        <mxCell id="pedido_2" parent="pedido" style="text;strokeColor=none;fillColor=#ffffff;align=left;verticalAlign=middle;overflow=hidden;html=1;fontSize=11;" value="&lt;table cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; width=&quot;100%&quot;&gt;&lt;tr&gt;&lt;td width=&quot;62&quot; style=&quot;color:#b85450;&quot;&gt;&amp;nbsp;&lt;b&gt;FK&lt;/b&gt;&lt;/td&gt;&lt;td width=&quot;110&quot;&gt;&lt;b&gt;id_usuario&lt;/b&gt;&lt;/td&gt;&lt;td width=&quot;100&quot; style=&quot;color:#666666;&quot;&gt;INT&lt;/td&gt;&lt;td style=&quot;color:#999999;font-size:10px;&quot;&gt;NN&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" vertex="1">
+          <mxGeometry height="26" width="340" y="82" as="geometry" />
+        </mxCell>
+        <mxCell id="pedido_3" parent="pedido" style="text;strokeColor=none;fillColor=#ffffff;align=left;verticalAlign=middle;overflow=hidden;html=1;fontSize=11;" value="&lt;table cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; width=&quot;100%&quot;&gt;&lt;tr&gt;&lt;td width=&quot;62&quot; style=&quot;color:#b85450;&quot;&gt;&amp;nbsp;&lt;/td&gt;&lt;td width=&quot;110&quot;&gt;&lt;b&gt;fecha_pedido&lt;/b&gt;&lt;/td&gt;&lt;td width=&quot;100&quot; style=&quot;color:#666666;&quot;&gt;DATETIME&lt;/td&gt;&lt;td style=&quot;color:#999999;font-size:10px;&quot;&gt;NN&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" vertex="1">
+          <mxGeometry height="26" width="340" y="108" as="geometry" />
+        </mxCell>
+        <mxCell id="pedido_4" parent="pedido" style="text;strokeColor=none;fillColor=#ffffff;align=left;verticalAlign=middle;overflow=hidden;html=1;fontSize=11;" value="&lt;table cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; width=&quot;100%&quot;&gt;&lt;tr&gt;&lt;td width=&quot;62&quot; style=&quot;color:#b85450;&quot;&gt;&amp;nbsp;&lt;/td&gt;&lt;td width=&quot;110&quot;&gt;&lt;b&gt;estado&lt;/b&gt;&lt;/td&gt;&lt;td width=&quot;100&quot; style=&quot;color:#666666;&quot;&gt;ENUM&lt;/td&gt;&lt;td style=&quot;color:#999999;font-size:10px;&quot;&gt;NN&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" vertex="1">
+          <mxGeometry height="26" width="340" y="134" as="geometry" />
+        </mxCell>
+        <mxCell id="pedido_5" parent="pedido" style="text;strokeColor=none;fillColor=#ffffff;align=left;verticalAlign=middle;overflow=hidden;html=1;fontSize=11;" value="&lt;table cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; width=&quot;100%&quot;&gt;&lt;tr&gt;&lt;td width=&quot;62&quot; style=&quot;color:#b85450;&quot;&gt;&amp;nbsp;&lt;/td&gt;&lt;td width=&quot;110&quot;&gt;&lt;b&gt;total&lt;/b&gt;&lt;/td&gt;&lt;td width=&quot;100&quot; style=&quot;color:#666666;&quot;&gt;DECIMAL(10,2)&lt;/td&gt;&lt;td style=&quot;color:#999999;font-size:10px;&quot;&gt;NN&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" vertex="1">
+          <mxGeometry height="26" width="340" y="160" as="geometry" />
+        </mxCell>
+        <mxCell id="pago" parent="1" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=14;" value="pago" vertex="1">
+          <mxGeometry height="134" width="340" x="840" y="330" as="geometry" />
+        </mxCell>
+        <mxCell id="pago_0" parent="pago" style="text;strokeColor=none;fillColor=#ffffff;align=left;verticalAlign=middle;overflow=hidden;html=1;fontSize=11;" value="&lt;table cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; width=&quot;100%&quot;&gt;&lt;tr&gt;&lt;td width=&quot;62&quot; style=&quot;color:#b85450;&quot;&gt;&amp;nbsp;&lt;b&gt;PK, FK&lt;/b&gt;&lt;/td&gt;&lt;td width=&quot;110&quot;&gt;&lt;b&gt;id_pedido&lt;/b&gt;&lt;/td&gt;&lt;td width=&quot;100&quot; style=&quot;color:#666666;&quot;&gt;INT&lt;/td&gt;&lt;td style=&quot;color:#999999;font-size:10px;&quot;&gt;UQ&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" vertex="1">
+          <mxGeometry height="26" width="340" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="pago_1" parent="pago" style="text;strokeColor=none;fillColor=#ffffff;align=left;verticalAlign=middle;overflow=hidden;html=1;fontSize=11;" value="&lt;table cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; width=&quot;100%&quot;&gt;&lt;tr&gt;&lt;td width=&quot;62&quot; style=&quot;color:#b85450;&quot;&gt;&amp;nbsp;&lt;/td&gt;&lt;td width=&quot;110&quot;&gt;&lt;b&gt;metodo_pago&lt;/b&gt;&lt;/td&gt;&lt;td width=&quot;100&quot; style=&quot;color:#666666;&quot;&gt;ENUM&lt;/td&gt;&lt;td style=&quot;color:#999999;font-size:10px;&quot;&gt;NN&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" vertex="1">
+          <mxGeometry height="26" width="340" y="56" as="geometry" />
+        </mxCell>
+        <mxCell id="pago_2" parent="pago" style="text;strokeColor=none;fillColor=#ffffff;align=left;verticalAlign=middle;overflow=hidden;html=1;fontSize=11;" value="&lt;table cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; width=&quot;100%&quot;&gt;&lt;tr&gt;&lt;td width=&quot;62&quot; style=&quot;color:#b85450;&quot;&gt;&amp;nbsp;&lt;/td&gt;&lt;td width=&quot;110&quot;&gt;&lt;b&gt;monto&lt;/b&gt;&lt;/td&gt;&lt;td width=&quot;100&quot; style=&quot;color:#666666;&quot;&gt;DECIMAL(10,2)&lt;/td&gt;&lt;td style=&quot;color:#999999;font-size:10px;&quot;&gt;NN&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" vertex="1">
+          <mxGeometry height="26" width="340" y="82" as="geometry" />
+        </mxCell>
+        <mxCell id="pago_3" parent="pago" style="text;strokeColor=none;fillColor=#ffffff;align=left;verticalAlign=middle;overflow=hidden;html=1;fontSize=11;" value="&lt;table cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; width=&quot;100%&quot;&gt;&lt;tr&gt;&lt;td width=&quot;62&quot; style=&quot;color:#b85450;&quot;&gt;&amp;nbsp;&lt;/td&gt;&lt;td width=&quot;110&quot;&gt;&lt;b&gt;fecha_pago&lt;/b&gt;&lt;/td&gt;&lt;td width=&quot;100&quot; style=&quot;color:#666666;&quot;&gt;DATETIME&lt;/td&gt;&lt;td style=&quot;color:#999999;font-size:10px;&quot;&gt;NN&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" vertex="1">
+          <mxGeometry height="26" width="340" y="108" as="geometry" />
+        </mxCell>
+        <mxCell id="detalle_pedido" parent="1" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=14;" value="detalle_pedido" vertex="1">
+          <mxGeometry height="160" width="340" x="440" y="640" as="geometry" />
+        </mxCell>
+        <mxCell id="detalle_pedido_0" parent="detalle_pedido" style="text;strokeColor=none;fillColor=#ffffff;align=left;verticalAlign=middle;overflow=hidden;html=1;fontSize=11;" value="&lt;table cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; width=&quot;100%&quot;&gt;&lt;tr&gt;&lt;td width=&quot;62&quot; style=&quot;color:#b85450;&quot;&gt;&amp;nbsp;&lt;b&gt;PK, FK&lt;/b&gt;&lt;/td&gt;&lt;td width=&quot;110&quot;&gt;&lt;b&gt;id_pedido&lt;/b&gt;&lt;/td&gt;&lt;td width=&quot;100&quot; style=&quot;color:#666666;&quot;&gt;INT&lt;/td&gt;&lt;td style=&quot;color:#999999;font-size:10px;&quot;&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" vertex="1">
+          <mxGeometry height="26" width="340" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="detalle_pedido_1" parent="detalle_pedido" style="text;strokeColor=none;fillColor=#ffffff;align=left;verticalAlign=middle;overflow=hidden;html=1;fontSize=11;" value="&lt;table cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; width=&quot;100%&quot;&gt;&lt;tr&gt;&lt;td width=&quot;62&quot; style=&quot;color:#b85450;&quot;&gt;&amp;nbsp;&lt;b&gt;PK, FK&lt;/b&gt;&lt;/td&gt;&lt;td width=&quot;110&quot;&gt;&lt;b&gt;id_producto&lt;/b&gt;&lt;/td&gt;&lt;td width=&quot;100&quot; style=&quot;color:#666666;&quot;&gt;INT&lt;/td&gt;&lt;td style=&quot;color:#999999;font-size:10px;&quot;&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" vertex="1">
+          <mxGeometry height="26" width="340" y="56" as="geometry" />
+        </mxCell>
+        <mxCell id="detalle_pedido_2" parent="detalle_pedido" style="text;strokeColor=none;fillColor=#ffffff;align=left;verticalAlign=middle;overflow=hidden;html=1;fontSize=11;" value="&lt;table cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; width=&quot;100%&quot;&gt;&lt;tr&gt;&lt;td width=&quot;62&quot; style=&quot;color:#b85450;&quot;&gt;&amp;nbsp;&lt;/td&gt;&lt;td width=&quot;110&quot;&gt;&lt;b&gt;cantidad&lt;/b&gt;&lt;/td&gt;&lt;td width=&quot;100&quot; style=&quot;color:#666666;&quot;&gt;INT&lt;/td&gt;&lt;td style=&quot;color:#999999;font-size:10px;&quot;&gt;NN&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" vertex="1">
+          <mxGeometry height="26" width="340" y="82" as="geometry" />
+        </mxCell>
+        <mxCell id="detalle_pedido_3" parent="detalle_pedido" style="text;strokeColor=none;fillColor=#ffffff;align=left;verticalAlign=middle;overflow=hidden;html=1;fontSize=11;" value="&lt;table cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; width=&quot;100%&quot;&gt;&lt;tr&gt;&lt;td width=&quot;62&quot; style=&quot;color:#b85450;&quot;&gt;&amp;nbsp;&lt;/td&gt;&lt;td width=&quot;110&quot;&gt;&lt;b&gt;precio_unitario&lt;/b&gt;&lt;/td&gt;&lt;td width=&quot;100&quot; style=&quot;color:#666666;&quot;&gt;DECIMAL(10,2)&lt;/td&gt;&lt;td style=&quot;color:#999999;font-size:10px;&quot;&gt;NN&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" vertex="1">
+          <mxGeometry height="26" width="340" y="108" as="geometry" />
+        </mxCell>
+        <mxCell id="detalle_pedido_4" parent="detalle_pedido" style="text;strokeColor=none;fillColor=#ffffff;align=left;verticalAlign=middle;overflow=hidden;html=1;fontSize=11;" value="&lt;table cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; width=&quot;100%&quot;&gt;&lt;tr&gt;&lt;td width=&quot;62&quot; style=&quot;color:#b85450;&quot;&gt;&amp;nbsp;&lt;/td&gt;&lt;td width=&quot;110&quot;&gt;&lt;b&gt;subtotal&lt;/b&gt;&lt;/td&gt;&lt;td width=&quot;100&quot; style=&quot;color:#666666;&quot;&gt;DECIMAL(10,2)&lt;/td&gt;&lt;td style=&quot;color:#999999;font-size:10px;&quot;&gt;NN&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" vertex="1">
+          <mxGeometry height="26" width="340" y="134" as="geometry" />
+        </mxCell>
+        <mxCell id="producto" parent="1" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=14;" value="producto" vertex="1">
+          <mxGeometry height="238" width="340" x="840" y="640" as="geometry" />
+        </mxCell>
+        <mxCell id="producto_0" parent="producto" style="text;strokeColor=none;fillColor=#ffffff;align=left;verticalAlign=middle;overflow=hidden;html=1;fontSize=11;" value="&lt;table cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; width=&quot;100%&quot;&gt;&lt;tr&gt;&lt;td width=&quot;62&quot; style=&quot;color:#b85450;&quot;&gt;&amp;nbsp;&lt;b&gt;PK&lt;/b&gt;&lt;/td&gt;&lt;td width=&quot;110&quot;&gt;&lt;b&gt;id_producto&lt;/b&gt;&lt;/td&gt;&lt;td width=&quot;100&quot; style=&quot;color:#666666;&quot;&gt;INT&lt;/td&gt;&lt;td style=&quot;color:#999999;font-size:10px;&quot;&gt;AI&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" vertex="1">
+          <mxGeometry height="26" width="340" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="producto_1" parent="producto" style="text;strokeColor=none;fillColor=#ffffff;align=left;verticalAlign=middle;overflow=hidden;html=1;fontSize=11;" value="&lt;table cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; width=&quot;100%&quot;&gt;&lt;tr&gt;&lt;td width=&quot;62&quot; style=&quot;color:#b85450;&quot;&gt;&amp;nbsp;&lt;b&gt;FK&lt;/b&gt;&lt;/td&gt;&lt;td width=&quot;110&quot;&gt;&lt;b&gt;id_categoria&lt;/b&gt;&lt;/td&gt;&lt;td width=&quot;100&quot; style=&quot;color:#666666;&quot;&gt;INT&lt;/td&gt;&lt;td style=&quot;color:#999999;font-size:10px;&quot;&gt;NN&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" vertex="1">
+          <mxGeometry height="26" width="340" y="56" as="geometry" />
+        </mxCell>
+        <mxCell id="producto_2" parent="producto" style="text;strokeColor=none;fillColor=#ffffff;align=left;verticalAlign=middle;overflow=hidden;html=1;fontSize=11;" value="&lt;table cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; width=&quot;100%&quot;&gt;&lt;tr&gt;&lt;td width=&quot;62&quot; style=&quot;color:#b85450;&quot;&gt;&amp;nbsp;&lt;/td&gt;&lt;td width=&quot;110&quot;&gt;&lt;b&gt;nombre&lt;/b&gt;&lt;/td&gt;&lt;td width=&quot;100&quot; style=&quot;color:#666666;&quot;&gt;VARCHAR(100)&lt;/td&gt;&lt;td style=&quot;color:#999999;font-size:10px;&quot;&gt;NN&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" vertex="1">
+          <mxGeometry height="26" width="340" y="82" as="geometry" />
+        </mxCell>
+        <mxCell id="producto_3" parent="producto" style="text;strokeColor=none;fillColor=#ffffff;align=left;verticalAlign=middle;overflow=hidden;html=1;fontSize=11;" value="&lt;table cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; width=&quot;100%&quot;&gt;&lt;tr&gt;&lt;td width=&quot;62&quot; style=&quot;color:#b85450;&quot;&gt;&amp;nbsp;&lt;/td&gt;&lt;td width=&quot;110&quot;&gt;&lt;b&gt;plataforma&lt;/b&gt;&lt;/td&gt;&lt;td width=&quot;100&quot; style=&quot;color:#666666;&quot;&gt;VARCHAR(40)&lt;/td&gt;&lt;td style=&quot;color:#999999;font-size:10px;&quot;&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" vertex="1">
+          <mxGeometry height="26" width="340" y="108" as="geometry" />
+        </mxCell>
+        <mxCell id="producto_4" parent="producto" style="text;strokeColor=none;fillColor=#ffffff;align=left;verticalAlign=middle;overflow=hidden;html=1;fontSize=11;" value="&lt;table cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; width=&quot;100%&quot;&gt;&lt;tr&gt;&lt;td width=&quot;62&quot; style=&quot;color:#b85450;&quot;&gt;&amp;nbsp;&lt;/td&gt;&lt;td width=&quot;110&quot;&gt;&lt;b&gt;precio&lt;/b&gt;&lt;/td&gt;&lt;td width=&quot;100&quot; style=&quot;color:#666666;&quot;&gt;DECIMAL(10,2)&lt;/td&gt;&lt;td style=&quot;color:#999999;font-size:10px;&quot;&gt;NN&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" vertex="1">
+          <mxGeometry height="26" width="340" y="134" as="geometry" />
+        </mxCell>
+        <mxCell id="producto_5" parent="producto" style="text;strokeColor=none;fillColor=#ffffff;align=left;verticalAlign=middle;overflow=hidden;html=1;fontSize=11;" value="&lt;table cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; width=&quot;100%&quot;&gt;&lt;tr&gt;&lt;td width=&quot;62&quot; style=&quot;color:#b85450;&quot;&gt;&amp;nbsp;&lt;/td&gt;&lt;td width=&quot;110&quot;&gt;&lt;b&gt;stock&lt;/b&gt;&lt;/td&gt;&lt;td width=&quot;100&quot; style=&quot;color:#666666;&quot;&gt;INT&lt;/td&gt;&lt;td style=&quot;color:#999999;font-size:10px;&quot;&gt;NN&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" vertex="1">
+          <mxGeometry height="26" width="340" y="160" as="geometry" />
+        </mxCell>
+        <mxCell id="producto_6" parent="producto" style="text;strokeColor=none;fillColor=#ffffff;align=left;verticalAlign=middle;overflow=hidden;html=1;fontSize=11;" value="&lt;table cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; width=&quot;100%&quot;&gt;&lt;tr&gt;&lt;td width=&quot;62&quot; style=&quot;color:#b85450;&quot;&gt;&amp;nbsp;&lt;/td&gt;&lt;td width=&quot;110&quot;&gt;&lt;b&gt;stock_minimo&lt;/b&gt;&lt;/td&gt;&lt;td width=&quot;100&quot; style=&quot;color:#666666;&quot;&gt;INT&lt;/td&gt;&lt;td style=&quot;color:#999999;font-size:10px;&quot;&gt;NN&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" vertex="1">
+          <mxGeometry height="26" width="340" y="186" as="geometry" />
+        </mxCell>
+        <mxCell id="producto_7" parent="producto" style="text;strokeColor=none;fillColor=#ffffff;align=left;verticalAlign=middle;overflow=hidden;html=1;fontSize=11;" value="&lt;table cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; width=&quot;100%&quot;&gt;&lt;tr&gt;&lt;td width=&quot;62&quot; style=&quot;color:#b85450;&quot;&gt;&amp;nbsp;&lt;/td&gt;&lt;td width=&quot;110&quot;&gt;&lt;b&gt;activo&lt;/b&gt;&lt;/td&gt;&lt;td width=&quot;100&quot; style=&quot;color:#666666;&quot;&gt;TINYINT(1)&lt;/td&gt;&lt;td style=&quot;color:#999999;font-size:10px;&quot;&gt;NN&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" vertex="1">
+          <mxGeometry height="26" width="340" y="212" as="geometry" />
+        </mxCell>
+        <mxCell id="categoria" parent="1" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=14;" value="categoria" vertex="1">
+          <mxGeometry height="108" width="340" x="1240" y="640" as="geometry" />
+        </mxCell>
+        <mxCell id="categoria_0" parent="categoria" style="text;strokeColor=none;fillColor=#ffffff;align=left;verticalAlign=middle;overflow=hidden;html=1;fontSize=11;" value="&lt;table cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; width=&quot;100%&quot;&gt;&lt;tr&gt;&lt;td width=&quot;62&quot; style=&quot;color:#b85450;&quot;&gt;&amp;nbsp;&lt;b&gt;PK&lt;/b&gt;&lt;/td&gt;&lt;td width=&quot;110&quot;&gt;&lt;b&gt;id_categoria&lt;/b&gt;&lt;/td&gt;&lt;td width=&quot;100&quot; style=&quot;color:#666666;&quot;&gt;INT&lt;/td&gt;&lt;td style=&quot;color:#999999;font-size:10px;&quot;&gt;AI&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" vertex="1">
+          <mxGeometry height="26" width="340" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="categoria_1" parent="categoria" style="text;strokeColor=none;fillColor=#ffffff;align=left;verticalAlign=middle;overflow=hidden;html=1;fontSize=11;" value="&lt;table cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; width=&quot;100%&quot;&gt;&lt;tr&gt;&lt;td width=&quot;62&quot; style=&quot;color:#b85450;&quot;&gt;&amp;nbsp;&lt;/td&gt;&lt;td width=&quot;110&quot;&gt;&lt;b&gt;nombre&lt;/b&gt;&lt;/td&gt;&lt;td width=&quot;100&quot; style=&quot;color:#666666;&quot;&gt;VARCHAR(50)&lt;/td&gt;&lt;td style=&quot;color:#999999;font-size:10px;&quot;&gt;NN, UQ&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" vertex="1">
+          <mxGeometry height="26" width="340" y="56" as="geometry" />
+        </mxCell>
+        <mxCell id="categoria_2" parent="categoria" style="text;strokeColor=none;fillColor=#ffffff;align=left;verticalAlign=middle;overflow=hidden;html=1;fontSize=11;" value="&lt;table cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; width=&quot;100%&quot;&gt;&lt;tr&gt;&lt;td width=&quot;62&quot; style=&quot;color:#b85450;&quot;&gt;&amp;nbsp;&lt;/td&gt;&lt;td width=&quot;110&quot;&gt;&lt;b&gt;descripcion&lt;/b&gt;&lt;/td&gt;&lt;td width=&quot;100&quot; style=&quot;color:#666666;&quot;&gt;VARCHAR(150)&lt;/td&gt;&lt;td style=&quot;color:#999999;font-size:10px;&quot;&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" vertex="1">
+          <mxGeometry height="26" width="340" y="82" as="geometry" />
+        </mxCell>
+        <mxCell id="r0" edge="1" parent="1" source="rol" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;dashed=1;startArrow=ERmandOne;startFill=0;endArrow=ERzeroToMany;endFill=0;strokeWidth=2;labelBackgroundColor=#ffffff;fontSize=12;" target="usuario" value="tiene">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="r1" edge="1" parent="1" source="cliente" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;dashed=1;startArrow=ERmandOne;startFill=0;endArrow=ERzeroToMany;endFill=0;strokeWidth=2;labelBackgroundColor=#ffffff;fontSize=12;" target="pedido" value="hace">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="r2" edge="1" parent="1" source="usuario" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;dashed=1;startArrow=ERmandOne;startFill=0;endArrow=ERzeroToMany;endFill=0;strokeWidth=2;labelBackgroundColor=#ffffff;fontSize=12;" target="pedido" value="registra">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="r3" edge="1" parent="1" source="pedido" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;startArrow=ERmandOne;startFill=0;endArrow=ERoneToMany;endFill=0;strokeWidth=2;labelBackgroundColor=#ffffff;fontSize=12;" target="detalle_pedido" value="contiene">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="r4" edge="1" parent="1" source="producto" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;startArrow=ERmandOne;startFill=0;endArrow=ERzeroToMany;endFill=0;strokeWidth=2;labelBackgroundColor=#ffffff;fontSize=12;" target="detalle_pedido" value="se vende en">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="r5" edge="1" parent="1" source="categoria" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;dashed=1;startArrow=ERmandOne;startFill=0;endArrow=ERzeroToMany;endFill=0;strokeWidth=2;labelBackgroundColor=#ffffff;fontSize=12;" target="producto" value="agrupa">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="r6" edge="1" parent="1" source="pedido" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;startArrow=ERmandOne;startFill=0;endArrow=ERzeroToOne;endFill=0;strokeWidth=2;labelBackgroundColor=#ffffff;fontSize=12;" target="pago" value="se paga con">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
