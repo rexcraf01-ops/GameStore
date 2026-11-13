@@ -94,7 +94,7 @@ class ProductoController {
 
         if (empty($datos['nombre']) || empty($datos['id_categoria']) || $datos['precio'] === '') {
             establecerMensaje('peligro', 'Los campos Nombre, Categoría y Precio son obligatorios.');
-            redireccionar('productos/editar&id=' . $id);
+            redireccionar('productos');
         }
 
         try {
@@ -103,7 +103,7 @@ class ProductoController {
             redireccionar('productos');
         } catch (Exception $error) {
             establecerMensaje('peligro', 'Error al actualizar producto: ' . $error->getMessage());
-            redireccionar('productos/editar&id=' . $id);
+            redireccionar('productos');
         }
     }
 

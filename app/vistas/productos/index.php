@@ -126,9 +126,18 @@ require_once __DIR__ . '/../plantilla/menu_lateral.php';
                             <?php if (esAdministrador()): ?>
                             <td>
                                 <div style="display: flex; gap: 8px;">
-                                    <a href="index.php?accion=productos/editar&id=<?= $p['id_producto'] ?>" class="btn btn-secondary btn-sm">
+                                    <button type="button"
+                                            class="btn btn-secondary btn-sm btn-editar-modal"
+                                            data-id="<?= $p['id_producto'] ?>"
+                                            data-nombre="<?= escapar($p['nombre']) ?>"
+                                            data-categoria="<?= $p['id_categoria'] ?>"
+                                            data-plataforma="<?= escapar($p['plataforma'] ?? '') ?>"
+                                            data-precio="<?= $p['precio'] ?>"
+                                            data-stock="<?= $p['stock'] ?>"
+                                            data-stock-minimo="<?= $p['stock_minimo'] ?>"
+                                            data-activo="<?= $p['activo'] ?>">
                                         Editar
-                                    </a>
+                                    </button>
                                     <form action="index.php?accion=productos/eliminar" method="POST" class="form-eliminar">
                                         <input type="hidden" name="id_producto" value="<?= $p['id_producto'] ?>">
                                         <button type="submit" class="btn btn-danger btn-sm">Eliminar</button>
@@ -143,5 +152,112 @@ require_once __DIR__ . '/../plantilla/menu_lateral.php';
         </table>
     </div>
 </div>
+
+<!-- ==================================================================== -->
+<!-- Ventana Emergente (Modal) para Editar Producto                        -->
+<!-- ==================================================================== -->
+<div id="modal-editar-producto" class="modal-overlay">
+    <div class="modal-dialog" style="max-width: 650px;">
+        <div class="modal-header" style="display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid var(--color-border); padding-bottom: 14px; margin-bottom: 18px;">
+            <h2 class="modal-title" style="font-size: 20px; font-weight: 700;">Editar Información del Producto</h2>
+            <button type="button" class="btn-cerrar-modal" style="background: none; border: none; font-size: 24px; cursor: pointer; color: var(--color-text-muted); line-height: 1;" title="Cerrar">&times;</button>
+        </div>
+
+        <form action="index.php?accion=productos/actualizar" method="POST">
+            <input type="hidden" name="id_producto" id="modal-id-producto">
+
+            <div class="form-group">
+                <label class="form-label" for="modal-nombre">Nombre del Producto / Videojuego *</label>
+                <input type="text" id="modal-nombre" name="nombre" class="form-control" required autofocus>
+            </div>
+
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px;">
+                <div class="form-group">
+                    <label class="form-label" for="modal-categoria">Categoría *</label>
+                    <select id="modal-categoria" name="id_categoria" class="form-control" required>
+                        <option value="">Seleccione una categoría</option>
+                        <?php foreach ($categorias as $cat): ?>
+                            <option value="<?= $cat['id_categoria'] ?>">
+                                <?= escapar($cat['nombre']) ?>
+                            </option>
+                        <?php endforeach; ?>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label" for="modal-plataforma">Plataforma / Tipo</label>
+                    <input type="text" id="modal-plataforma" name="plataforma" class="form-control" placeholder="Ej: PS5, Switch, Xbox, PC...">
+                </div>
+            </div>
+
+            <div style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 16px;">
+                <div class="form-group">
+                    <label class="form-label" for="modal-precio">Precio ($) *</label>
+                    <input type="number" step="0.01" min="0" id="modal-precio" name="precio" class="form-control" required>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label" for="modal-stock">Stock Actual *</label>
+                    <input type="number" min="0" id="modal-stock" name="stock" class="form-control" required>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label" for="modal-stock-minimo">Stock Mínimo *</label>
+                    <input type="number" min="0" id="modal-stock-minimo" name="stock_minimo" class="form-control" required>
+                </div>
+            </div>
+
+            <div class="form-group" style="margin-top: 10px;">
+                <label style="display: flex; align-items: center; gap: 8px; cursor: pointer; font-size: 14px; font-weight: 500;">
+                    <input type="checkbox" name="activo" id="modal-activo" value="1">
+                    <span>Producto activo (disponible para venta y visible en catálogo)</span>
+                </label>
+            </div>
+
+            <div class="modal-footer" style="display: flex; justify-content: flex-end; gap: 12px; margin-top: 24px; border-top: 1px solid var(--color-border); padding-top: 16px;">
+                <button type="button" class="btn btn-secondary btn-cerrar-modal">Cancelar</button>
+                <button type="submit" class="btn btn-primary">Guardar Cambios</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+<script>
+// Manejo de la ventana emergente (Modal) en JavaScript sencillo
+const modalEditar = document.getElementById('modal-editar-producto');
+const botonesEditar = document.querySelectorAll('.btn-editar-modal');
+const botonesCerrar = document.querySelectorAll('.btn-cerrar-modal');
+
+// Al hacer clic en el botón Editar de una fila
+botonesEditar.forEach(boton => {
+    boton.addEventListener('click', function() {
+        document.getElementById('modal-id-producto').value = this.dataset.id;
+        document.getElementById('modal-nombre').value = this.dataset.nombre;
+        document.getElementById('modal-categoria').value = this.dataset.categoria;
+        document.getElementById('modal-plataforma').value = this.dataset.plataforma;
+        document.getElementById('modal-precio').value = this.dataset.precio;
+        document.getElementById('modal-stock').value = this.dataset.stock;
+        document.getElementById('modal-stock-minimo').value = this.dataset.stockMinimo;
+        document.getElementById('modal-activo').checked = (this.dataset.activo === "1");
+
+        // Mostrar la ventana emergente agregando la clase active
+        modalEditar.classList.add('active');
+    });
+});
+
+// Cerrar con los botones Cancelar o X
+botonesCerrar.forEach(boton => {
+    boton.addEventListener('click', function() {
+        modalEditar.classList.remove('active');
+    });
+});
+
+// Cerrar si hace clic fuera del recuadro blanco
+modalEditar.addEventListener('click', function(evento) {
+    if (evento.target === modalEditar) {
+        modalEditar.classList.remove('active');
+    }
+});
+</script>
 
 <?php require_once __DIR__ . '/../plantilla/pie.php'; ?>
